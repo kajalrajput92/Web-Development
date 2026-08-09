@@ -4,173 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Website</title>
+    <meta name="description" content="Traditional Indian sweet recipes from Kajal Da Dhabba.">
+    <title>Kajal Da Dhabba | Indian Sweet Recipes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="site-shell">
+        <header class="site-header" id="home">
+            <nav class="navbar" aria-label="Main navigation">
+                <a class="brand" href="#home" aria-label="Kajal Da Dhabba home">
+                    <span class="brand-mark">K</span>
+                    <span>Kajal Da <strong>Dhabba</strong></span>
+                </a>
+                <div class="nav-links">
+                    <a href="#recipes">Recipes</a>
+                    <a href="#about">Our story</a>
+                    <a class="nav-cta" href="#contact">Get in touch</a>
+                </div>
+            </nav>
 
-        <header>
-            <div class="navcontainer">
-                <nav>
-                    <ul id="navlist">
-                        <li id="navlogo">Kajal Da Dhabba</li>
-                        <li id="navitems">
-                            <a href="#">Home</a>
-                            <a href="#">Contact</a>
-                            <a href="#">About</a>
-                        </li>
-                        <!-- <ul id="navitems">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">About</a></li>
-                        </ul> -->
-                    </ul>
-                </nav>
-            </div>
+            <section class="hero">
+                <p class="eyebrow">Made with warmth, served with love</p>
+                <h1>Sweet traditions,<br><em>beautifully shared.</em></h1>
+                <p class="hero-copy">Discover beloved Indian mithai recipes, made simple enough to bring a little celebration to every table.</p>
+                <a class="button button-primary" href="#recipes">Explore recipes <span aria-hidden="true">→</span></a>
+                <div class="hero-note">
+                    <span class="star" aria-hidden="true">★</span>
+                    <span>Four classic recipes from our kitchen</span>
+                </div>
+            </section>
         </header>
 
         <main>
-            <div class="contentbox">
-                <!-- item 1 -->
-                <section class="item">
-                    <div class="leftbox">
-                        <h2>Gulab Jamun</h2>
-                        <div>
-                            <h3>Ingredients</h3>
-                            <ul class="itemlist">
-                                <li>Sugar</li>
-                                <li>Oil</li>
-                                <li>Maida</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Recipe</h3>
-                            <ol class="recipelist">
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, omnis!</li>
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, consectetur.
-                                </li>
-                                <li>Illo doloremque quidem nulla dolorum libero nam hic fuga at!</li>
-                                <li>Voluptates neque libero eligendi sit et deleniti, reiciendis corrupti veritatis?
-                                </li>
-                            </ol>
-                        </div>
+            <section class="recipes-section" id="recipes" aria-labelledby="recipes-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">The sweet collection</p>
+                        <h2 id="recipes-title">A taste of tradition</h2>
                     </div>
-                    <div class="rightbox">
-                        <img src="images/gulab jamun.png" alt="Gulab jamun image">
-                        <div class="overlay">
-                            <span>Click here to buy</span>
-                        </div>
-                    </div>
+                    <p>Comforting flavours, thoughtfully selected ingredients, and recipes made for sharing.</p>
+                </div>
 
-                </section>
+                <div class="recipe-grid">
+                    <article class="recipe-card featured">
+                        <div class="recipe-image">
+                            <img src="images/gulab jamun.png" alt="Bowl of golden Gulab Jamun">
+                            <span class="recipe-tag">Most loved</span>
+                        </div>
+                        <div class="recipe-content">
+                            <p class="recipe-number">01 / Classic</p>
+                            <h3>Gulab Jamun</h3>
+                            <p class="recipe-description">Soft, golden dumplings steeped in a fragrant rose-cardamom syrup.</p>
+                            <div class="recipe-meta"><span>⏱ 45 mins</span><span>•</span><span>Easy</span></div>
+                            <details>
+                                <summary>View ingredients <span>+</span></summary>
+                                <ul><li>Milk powder</li><li>Flour</li><li>Ghee</li><li>Sugar &amp; cardamom</li></ul>
+                            </details>
+                        </div>
+                    </article>
 
-                <!-- item 2 -->
-                <section class="item">
-                    <div class="leftbox">
-                        <h2>Barfi</h2>
-                        <div>
-                            <h3>Ingredients</h3>
-                            <ul class="itemlist">
-                                <li>Sugar</li>
-                                <li>Butter</li>
-                                <li>Milk</li>
-                            </ul>
+                    <article class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="images/barfi.png" alt="Pieces of creamy Barfi">
                         </div>
-                        <div>
-                            <h3>Recipe</h3>
-                            <ol class="recipelist">
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, omnis!</li>
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, consectetur.
-                                </li>
-                                <li>Illo doloremque quidem nulla dolorum libero nam hic fuga at!</li>
-                                <li>Voluptates neque libero eligendi sit et deleniti, reiciendis corrupti veritatis?
-                                </li>
-                            </ol>
+                        <div class="recipe-content">
+                            <p class="recipe-number">02 / Creamy</p>
+                            <h3>Barfi</h3>
+                            <p class="recipe-description">A delicately sweet milk confection with an irresistible melt-in-the-mouth texture.</p>
+                            <div class="recipe-meta"><span>⏱ 35 mins</span><span>•</span><span>Easy</span></div>
+                            <details>
+                                <summary>View ingredients <span>+</span></summary>
+                                <ul><li>Milk powder</li><li>Ghee</li><li>Condensed milk</li><li>Pistachios</li></ul>
+                            </details>
                         </div>
-                    </div>
-                    <div class="rightbox">
-                        <img src="images/barfi.png" alt="Barfi image">
-                        <div class="overlay">
-                            <span>Click here to buy</span>
-                        </div>
-                    </div>
-                </section>
+                    </article>
 
-                <!-- item 3 -->
-                <section class="item">
-                    <div class="leftbox">
-                        <h2>Ras Malai</h2>
-                        <div>
-                            <h3>Ingredients</h3>
-                            <ul class="itemlist">
-                                <li>Sugar</li>
-                                <li>Paneer</li>
-                                <li>Milk</li>
-                            </ul>
+                    <article class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="images/ras malai.png" alt="Ras Malai in saffron milk">
                         </div>
-                        <div>
-                            <h3>Recipe</h3>
-                            <ol class="recipelist">
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, omnis!</li>
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, consectetur.
-                                </li>
-                                <li>Illo doloremque quidem nulla dolorum libero nam hic fuga at!</li>
-                                <li>Voluptates neque libero eligendi sit et deleniti, reiciendis corrupti veritatis?
-                                </li>
-                            </ol>
+                        <div class="recipe-content">
+                            <p class="recipe-number">03 / Silky</p>
+                            <h3>Ras Malai</h3>
+                            <p class="recipe-description">Tender paneer discs resting in chilled saffron milk, scented with cardamom.</p>
+                            <div class="recipe-meta"><span>⏱ 60 mins</span><span>•</span><span>Medium</span></div>
+                            <details>
+                                <summary>View ingredients <span>+</span></summary>
+                                <ul><li>Paneer</li><li>Whole milk</li><li>Saffron</li><li>Cardamom</li></ul>
+                            </details>
                         </div>
-                    </div>
-                    <div class="rightbox">
-                        <img src="images/ras malai.png" alt="Ras malai image">
-                        <div class="overlay">
-                            <span>Click here to buy</span>
-                        </div>
-                    </div>
-                </section>
+                    </article>
 
-                <!-- item 4 -->
-                <section class="item">
-                    <div class="leftbox">
-                        <h2>Kaju Katli</h2>
-                        <div>
-                            <h3>Ingredients</h3>
-                            <ul class="itemlist">
-                                <li>Sugar</li>
-                                <li>Cashews(Kaju)</li>
-                                <li>Milk</li>
-                            </ul>
+                    <article class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="images/kaju-katli.png" alt="Diamond-shaped Kaju Katli pieces">
                         </div>
-                        <div>
-                            <h3>Recipe</h3>
-                            <ol class="recipelist">
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, omnis!</li>
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, consectetur.
-                                </li>
-                                <li>Illo doloremque quidem nulla dolorum libero nam hic fuga at!</li>
-                                <li>Voluptates neque libero eligendi sit et deleniti, reiciendis corrupti veritatis?
-                                </li>
-                            </ol>
+                        <div class="recipe-content">
+                            <p class="recipe-number">04 / Festive</p>
+                            <h3>Kaju Katli</h3>
+                            <p class="recipe-description">A jewel-like cashew fudge, smooth and rich with a touch of celebration.</p>
+                            <div class="recipe-meta"><span>⏱ 40 mins</span><span>•</span><span>Medium</span></div>
+                            <details>
+                                <summary>View ingredients <span>+</span></summary>
+                                <ul><li>Cashews</li><li>Sugar</li><li>Rose water</li><li>Ghee</li></ul>
+                            </details>
                         </div>
-                    </div>
-                    <div class="rightbox">
-                        <img src="images/kaju-katli.png" alt="Kaju-katli image">
-                        <div class="overlay">
-                            <span>Click here to buy</span>
-                        </div>
-                    </div>
-                </section>
-            </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="story" id="about">
+                <div class="story-accent">Since<br>2026</div>
+                <div>
+                    <p class="eyebrow">Our little kitchen</p>
+                    <h2>Recipes that feel like <em>home.</em></h2>
+                </div>
+                <p>At Kajal Da Dhabba, every recipe starts with a memory: family celebrations, warm kitchens, and the joy of serving something made by hand.</p>
+            </section>
         </main>
 
-        <footer>
-            <div class="footerbox">
-                <p>Copyright &copy ; Kajal Da Dhabba Pvt Ltd 2026 | All rights reserved</p>
-            </div>
+        <footer id="contact">
+            <div class="footer-brand"><span class="brand-mark">K</span> Kajal Da Dhabba</div>
+            <p>Made for sweet moments &amp; everyday celebrations.</p>
+            <p class="copyright">© 2026 Kajal Da Dhabba. All rights reserved.</p>
         </footer>
     </div>
-
 </body>
 
 </html>
